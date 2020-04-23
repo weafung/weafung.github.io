@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  使用 Scoop 管理 Windows 软件 |   Weafung | 满架蔷薇一院香 </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  
+<link rel="stylesheet" href="/nayo.min.css">
+ 
+  
+<link rel="stylesheet" href="/style.scss.css">
+ 
+  
+<link rel="stylesheet" href="/font-awesome.min.css">
+ 
+  
+<link rel="stylesheet" href="/animate.3.5.2.min.css">
+ 
+
+<meta name="generator" content="Hexo 4.2.0"></head><body>  
+     
+    
+      <div class="container">       
+
+          
+            <section class="main">  
+          
+          <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <a href="/about"><img src="/images/logo.jpg" alt="Weifeng"></a>
+        </div>
+
+        <div class="description">
+            <a href="/about">
+                <p class="sub_title">Weafung , Programmer</p>
+            </a>
+            <div class="my_socials">
+                <a href="https://github.com/weafung" target="_blank" rel="noopener" title="github"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>  
+
+          <div class="autopagerize_page_element">
+	<div class="content">
+			<article class="post">
+  
+					<div class="post_title post_detail_title">
+
+	<h2>	
+		<a>使用 Scoop 管理 Windows 软件</a>
+	</h2>
+			
+
+	<div class="meta-info">	
+	<span>
+		2020.04.20
+	</span>
+
+</div>
+
+</div> 
+					<script type="text/x-mathjax-config">
+        var post = document.getElementsByClassName("post")[0];  
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",    
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] , ["\\(","\\)"]],
+                displayMath: [ ["$$","$$"] , ["\\[","\\]"]],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+            },
+            "HTML-CSS": {            
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub,post]);
+    </script>
+    <style>.MathJax{outline:0;}</style>
+
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.2/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ 
+				
+						<div class="typo post-content slideDownMin">
+				
+						
+				
+							
+									<p><a href="https://github.com/lukesampson/scoop" target="_blank" rel="noopener">Scoop</a> is a command-line installer for Windows.</p>
+<p>在 PowerShell 允许本地脚本的执行：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-executionpolicy remotesigned -scope currentuser</span><br></pre></td></tr></tbody></table></figure>
+
+<p>执行命令安装 Scoop：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iex (new-object net.webclient).downloadstring('https://get.scoop.sh')</span><br></pre></td></tr></tbody></table></figure>
+
+<p>静待脚本执行完成就可以了</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop help</span><br></pre></td></tr></tbody></table></figure>
+<a id="more"></a>
+<p>常用命令</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scoop search 7z</span><br><span class="line">scoop install 7zip</span><br><span class="line">scoop uninstall 7zip</span><br></pre></td></tr></tbody></table></figure>
+
+<p>添加本土化 bucket</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop bucket add dorado https://github.com/h404bi/dorado</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More: <a href="https://sspai.com/search/post/scoop" target="_blank" rel="noopener">少数派 scoop</a></p>
+  	
+									
+						</div>     
+						
+				
+					<div class="post-footer">
+
+  <!-- <div class="post-footer-other">
+      <span class="post-footer-item">
+        <html><head></head><body></body></html> 
+      </span>           
+      <span class="post-footer-item">
+        <html><head><script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<meta name="generator" content="Hexo 4.2.0"></head><body><span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		<div class="-mob-inner">
+		   			             
+            <a class="iconfont icon-share-qq -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-weixin -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-weibo -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-douban -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-facebook -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-twitter -mob-share-link"></a>		
+     	   			             
+            <a class="iconfont icon-share-google -mob-share-link"></a>		
+     	   
+		</div>
+	</div>	
+</body></html>
+      </span>           
+  </div>   -->
+
+  <div class="post-footer-meta">
+        	
+
+        	
+  </div>
+
+</div>
+
+
+<nav class="post-footer-nav">
+  
+  
+    <div class="post-footer-link">
+      <a href="/2020/04/18/hello-world/" id="post-nav-older" class="post-nav-link-wrap">
+        <strong class="post-nav-caption">older</strong>
+        
+          </a><a class="post-nav-title" href="/2020/04/18/hello-world/">
+          Hello World</a>
+      
+    </div>
+  
+</nav>
+ 
+						
+				</article>
+	</div>
+</div>
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    <div class="footer">
+	<a href="/">Home</a>
+	<a href="/archives">Archives</a>
+	<a href="/about">About</a>
+	<a target="_blank" href="http://www.w2fzu.com">West2online</a>
+
+	<div class="powered_by">
+		<a href="#">Weafung</a>
+	</div>
+
+	<div class="footer_slogan"><img src="/images/font.svg" alt="重拾写作的乐趣">
+
+	</div>
+
+</div>   
+
+    
+<script src="/nayo.bundle.js"></script>
+           
+          
+</body></html>
